@@ -36,7 +36,7 @@ export const Sidebar: React.FC = () => {
   return (
     <aside
       id="pravya-sidebar"
-      className="hidden lg:flex flex-col w-64 border-r border-[#0F4C4A]/10 dark:border-slate-800 backdrop-blur-md bg-white/60 dark:bg-slate-900/60 h-screen sticky top-0 shrink-0 select-none z-20"
+      className="hidden lg:flex flex-col w-64 border-r border-[#0F4C4A]/10 dark:border-slate-800 backdrop-blur-md bright-glass h-screen sticky top-0 shrink-0 select-none z-20"
     >
       {/* App Brand Header */}
       <div className="p-5 border-b border-[#0F4C4A]/10 dark:border-slate-800/80 flex flex-col gap-1.5 bright-glass">
@@ -47,7 +47,7 @@ export const Sidebar: React.FC = () => {
       </div>
 
       {/* Navigation Items */}
-      <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-1">
+      <nav className="flex-1 overflow-y-hidden px-3 py-4 space-y-1">
         {navItems.map((item) => {
           const Icon = item.icon;
           return (

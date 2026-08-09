@@ -192,9 +192,9 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
                   id={`start-session-dashboard-btn-${session.id}`}
                   onClick={() => onStartSession(session)}
                   className={`w-full py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
-                    isDone
-                      ? 'bg-white dark:bg-slate-800 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
-                      : 'bg-teal-600 hover:bg-teal-700 text-white shadow-xs'
+                      isDone
+                        ? 'bright-glass dark:bg-slate-800 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
+                        : 'bg-teal-600 hover:bg-teal-700 text-white shadow-xs'
                   }`}
                 >
                   {isDone ? (
@@ -220,7 +220,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
         {/* What Changed? Preview */}
         <Link
           to="/what-changed"
-          className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-teal-400 transition-all group space-y-3"
+          className="bright-glass dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-teal-400 transition-all group space-y-3"
         >
           <div className="flex items-center justify-between">
             <span className="p-2 rounded-xl bg-teal-50 dark:bg-teal-950 text-teal-600 dark:text-teal-400 font-bold text-xs flex items-center gap-1.5">
@@ -247,7 +247,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
         {/* Weekly Recovery Story Preview */}
         <Link
           to="/weekly"
-          className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-teal-400 transition-all group space-y-3"
+          className="bright-glass dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-teal-400 transition-all group space-y-3"
         >
           <div className="flex items-center justify-between">
             <span className="p-2 rounded-xl bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400 font-bold text-xs flex items-center gap-1.5">

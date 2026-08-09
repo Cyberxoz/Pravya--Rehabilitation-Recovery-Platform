@@ -38,7 +38,7 @@ export const WeeklyStoryPage: React.FC = () => {
       <SafetyBanner type="subtle" />
 
       {/* Week Browser Header */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="bright-glass dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-1">
             <Sparkles className="w-4 h-4 text-teal-600" />
@@ -58,7 +58,7 @@ export const WeeklyStoryPage: React.FC = () => {
             id="prev-week-story-btn"
             disabled={selectedWeekIndex === 0}
             onClick={() => setSelectedWeekIndex((prev) => Math.max(0, prev - 1))}
-            className="p-1.5 rounded-lg hover:bg-white dark:hover:bg-slate-700 disabled:opacity-30"
+              className="p-1.5 rounded-lg hover:bg-transparent dark:hover:bg-slate-700 disabled:opacity-30"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
@@ -69,7 +69,7 @@ export const WeeklyStoryPage: React.FC = () => {
             id="next-week-story-btn"
             disabled={selectedWeekIndex === summaries.length - 1}
             onClick={() => setSelectedWeekIndex((prev) => Math.min(summaries.length - 1, prev + 1))}
-            className="p-1.5 rounded-lg hover:bg-white dark:hover:bg-slate-700 disabled:opacity-30"
+            className="p-1.5 rounded-lg hover:bg-transparent dark:hover:bg-slate-700 disabled:opacity-30"
           >
             <ChevronRight className="w-4 h-4" />
           </button>
@@ -112,7 +112,7 @@ export const WeeklyStoryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
+          <div className="bright-glass dark:bg-slate-800 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
             <p className="text-3xl font-black text-amber-500">
               {currentSummary.milestonesReached}
             </p>
@@ -121,7 +121,7 @@ export const WeeklyStoryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
+          <div className="bright-glass dark:bg-slate-800 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
             <p className="text-3xl font-black text-teal-600 dark:text-teal-400">
               {currentSummary.checkinsCompleted}
             </p>
@@ -132,7 +132,7 @@ export const WeeklyStoryPage: React.FC = () => {
         </div>
 
         {/* Story Text Paragraphs */}
-        <div className="bg-white dark:bg-slate-800/80 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 space-y-3">
+        <div className="bright-glass dark:bg-slate-800/80 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 space-y-3">
           <h3 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
             <BookOpen className="w-4 h-4 text-teal-600" />
             <span>Weekly Recovery Reflection</span>

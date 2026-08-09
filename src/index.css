@@ -43,3 +43,12 @@ html, body, #root {
 	background-color: transparent !important;
 	background-image: none !important;
 }
+
+/* Hide the visible scrollbar for the desktop sidebar while keeping scroll behavior */
+#pravya-sidebar nav {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+#pravya-sidebar nav::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
+}

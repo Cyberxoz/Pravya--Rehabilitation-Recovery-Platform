@@ -133,7 +133,7 @@ export const WhatChangedPage: React.FC = () => {
       {/* METRICS COMPARISON GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Planned Sessions */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+        <div className="bright-glass dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
           <span className="text-xs font-semibold text-slate-500">Planned Sessions</span>
           <div className="flex items-baseline justify-between pt-1">
             <span className="text-xl font-black text-slate-900 dark:text-white">
@@ -146,7 +146,7 @@ export const WhatChangedPage: React.FC = () => {
         </div>
 
         {/* Recorded Sessions */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+        <div className="bright-glass dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
           <span className="text-xs font-semibold text-slate-500">Recorded Sessions</span>
           <div className="flex items-baseline justify-between pt-1">
             <span className="text-xl font-black text-teal-600 dark:text-teal-400">
@@ -159,7 +159,7 @@ export const WhatChangedPage: React.FC = () => {
         </div>
 
         {/* Active Days */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+        <div className="bright-glass dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
           <span className="text-xs font-semibold text-slate-500">Active Days</span>
           <div className="flex items-baseline justify-between pt-1">
             <span className="text-xl font-black text-teal-600 dark:text-teal-400">
@@ -172,7 +172,7 @@ export const WhatChangedPage: React.FC = () => {
         </div>
 
         {/* Safe Check-ins */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
+        <div className="bright-glass dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-1">
           <span className="text-xs font-semibold text-slate-500">Check-ins Completed</span>
           <div className="flex items-baseline justify-between pt-1">
             <span className="text-xl font-black text-slate-900 dark:text-white">
@@ -188,7 +188,7 @@ export const WhatChangedPage: React.FC = () => {
       {/* RECHARTS COMPARISON CHARTS */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Bar Chart Comparison */}
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+        <div className="bright-glass dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
           <h3 className="font-bold text-base text-slate-900 dark:text-white">
             Volume Comparison
           </h3>
@@ -208,7 +208,7 @@ export const WhatChangedPage: React.FC = () => {
         </div>
 
         {/* Daily Pattern Line Chart */}
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+        <div className="bright-glass dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
           <h3 className="font-bold text-base text-slate-900 dark:text-white">
             Daily Session Distribution
           </h3>

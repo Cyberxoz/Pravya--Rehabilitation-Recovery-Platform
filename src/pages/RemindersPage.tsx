@@ -57,7 +57,7 @@ export const RemindersPage: React.FC = () => {
             }`}
           >
             <div
-              className={`w-4 h-4 rounded-full bg-white transition-transform ${
+              className={`w-4 h-4 rounded-full bright-glass transition-transform ${
                 reminders.enabled ? 'translate-x-6' : 'translate-x-0'
               }`}
             />

@@ -71,7 +71,13 @@ const AppContent = () => {
   };
 
   return (
-  <div className="min-h-screen pravya-gradient text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200 bg-fixed overflow-y-auto">
+  <div
+    className="min-h-screen pravya-gradient text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200 bg-fixed overflow-y-auto"
+    style={{
+      backgroundImage:
+        'radial-gradient(circle at top left, #38BDF8 0%, #818CF8 35%, #C084FC 70%, #F472B6 100%)',
+    }}
+  >
       {/* Top Navbar */}
       <Navbar
         darkMode={darkMode}

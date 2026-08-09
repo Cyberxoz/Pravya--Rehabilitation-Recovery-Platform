@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             id="open-ai-assistant-btn"
             onClick={handleOpenAi}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium border border-[#0F4C4A]/15 dark:border-slate-700 bg-white/80 dark:bg-slate-800 text-[#0F4C4A] dark:text-slate-200 hover:bg-[#0F4C4A]/5 dark:hover:bg-slate-700 transition-colors shadow-2xs"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium border border-[#0F4C4A]/15 dark:border-slate-700 bright-glass dark:bg-slate-800 text-[#0F4C4A] dark:text-slate-200 hover:bg-[#0F4C4A]/5 dark:hover:bg-slate-700 transition-colors shadow-2xs"
           >
             <Bot className="w-4 h-4 text-[#0F4C4A] dark:text-teal-400" />
             <span className="hidden sm:inline">Recovery Assistant</span>

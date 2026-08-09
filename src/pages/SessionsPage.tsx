@@ -42,9 +42,9 @@ export const SessionsPage: React.FC = () => {
               key={st}
               id={`filter-session-btn-${st}`}
               onClick={() => setFilter(st)}
-              className={`px-3 py-1.5 rounded-lg transition-all ${
+                className={`px-3 py-1.5 rounded-lg transition-all ${
                 filter === st
-                  ? 'bg-white dark:bg-slate-900 text-teal-700 dark:text-teal-300 shadow-xs font-bold'
+                  ? 'bright-glass dark:bg-slate-900 text-teal-700 dark:text-teal-300 shadow-xs font-bold'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900'
               }`}
             >
@@ -64,7 +64,7 @@ export const SessionsPage: React.FC = () => {
             <div
               key={session.id}
               id={`session-record-card-${session.id}`}
-              className="bg-white dark:bg-slate-900 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+              className="bright-glass dark:bg-slate-900 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3"
             >
               <div className="space-y-1">
                 <div className="flex items-center gap-2">

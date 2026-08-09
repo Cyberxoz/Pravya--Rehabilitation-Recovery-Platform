@@ -64,7 +64,7 @@ export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({
                     ? 'bg-teal-600 text-white border-white dark:border-slate-900 shadow-teal-600/30'
                     : isInProgress
                     ? 'bg-amber-500 text-white border-white dark:border-slate-900 animate-pulse'
-                    : 'bg-white dark:bg-slate-800 text-slate-400 border-slate-300 dark:border-slate-700'
+                    : 'bright-glass dark:bg-slate-800 text-slate-400 border-slate-300 dark:border-slate-700'
                 }`}
               >
                 {isCompleted ? (
@@ -80,8 +80,8 @@ export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({
               <div
                 className={`p-4 sm:p-5 rounded-2xl border transition-all duration-200 ${
                   selectedMilestone?.id === m.id
-                    ? 'bg-white dark:bg-slate-800 border-teal-500/80 shadow-lg shadow-teal-500/10 ring-2 ring-teal-500/20'
-                    : 'bg-white/80 dark:bg-slate-800/80 border-slate-200/80 dark:border-slate-700/80 hover:border-teal-300 dark:hover:border-teal-700 hover:shadow-md'
+                    ? 'bright-glass dark:bg-slate-800 border-teal-500/80 shadow-lg shadow-teal-500/10 ring-2 ring-teal-500/20'
+                    : 'bright-glass dark:bg-slate-800/80 border-slate-200/80 dark:border-slate-700/80 hover:border-teal-300 dark:hover:border-teal-700 hover:shadow-md'
                 }`}
               >
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
@@ -157,7 +157,7 @@ export const JourneyTimeline: React.FC<JourneyTimelineProps> = ({
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
-            <span className="text-xs font-semibold text-teal-700 dark:text-teal-300 bg-white dark:bg-slate-900 px-3 py-1.5 rounded-xl border border-teal-200 dark:border-teal-800 shadow-xs">
+            <span className="text-xs font-semibold text-teal-700 dark:text-teal-300 bright-glass dark:bg-slate-900 px-3 py-1.5 rounded-xl border border-teal-200 dark:border-teal-800 shadow-xs">
               {currentStageText}
             </span>
           </div>

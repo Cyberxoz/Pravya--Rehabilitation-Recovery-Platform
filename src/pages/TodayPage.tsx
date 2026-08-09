@@ -64,7 +64,7 @@ export const TodayPage: React.FC<TodayPageProps> = ({ onStartSession }) => {
               className={`p-5 rounded-2xl border transition-all space-y-3 ${
                 isDone
                   ? 'bg-emerald-50/40 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/60'
-                  : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-teal-400'
+                  : 'bright-glass dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:border-teal-400'
               }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -119,7 +119,7 @@ export const TodayPage: React.FC<TodayPageProps> = ({ onStartSession }) => {
                   onClick={() => onStartSession(session)}
                   className={`px-5 py-2.5 rounded-xl text-xs font-bold flex items-center gap-2 transition-all ${
                     isDone
-                      ? 'bg-white dark:bg-slate-800 text-emerald-800 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50'
+                      ? 'bright-glass dark:bg-slate-800 text-emerald-800 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50'
                       : 'bg-teal-600 hover:bg-teal-700 text-white shadow-xs shadow-teal-600/30'
                   }`}
                 >
