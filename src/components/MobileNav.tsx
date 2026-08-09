@@ -60,7 +60,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
       {/* Drawer Menu */}
       <div
         id="mobile-navigation-drawer"
-        className={`fixed top-0 bottom-0 left-0 w-72 bg-[#FAF8F5] dark:bg-slate-900 border-r border-[#0F4C4A]/10 dark:border-slate-800 z-50 transform transition-transform duration-200 ease-in-out lg:hidden flex flex-col ${
+        className={`fixed top-0 bottom-0 left-0 w-72 bright-glass border-r border-[#0F4C4A]/10 dark:border-slate-800 z-50 transform transition-transform duration-200 ease-in-out lg:hidden flex flex-col ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -102,7 +102,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ isOpen, onClose }) => {
       {/* Bottom Navigation Bar for Quick Access */}
       <nav
         id="mobile-bottom-navigation"
-        className="lg:hidden fixed bottom-0 left-0 right-0 bg-[#FAF8F5]/95 dark:bg-slate-900/95 border-t border-[#0F4C4A]/10 dark:border-slate-800 z-30 px-2 py-1 flex justify-around items-center backdrop-blur-md"
+        className="lg:hidden fixed bottom-0 left-0 right-0 bright-glass border-t border-[#0F4C4A]/10 dark:border-slate-800 z-30 px-2 py-1 flex justify-around items-center"
       >
         {mainMobileTabs.map((tab) => {
           const Icon = tab.icon;

@@ -59,7 +59,7 @@ export const PlanPage: React.FC = () => {
       />
 
       {/* Plan Header */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-1">
             <Stethoscope className="w-4 h-4 text-teal-600" />
@@ -94,7 +94,7 @@ export const PlanPage: React.FC = () => {
             <div
               key={act.id}
               id={`plan-activity-card-${act.id}`}
-              className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-3 flex flex-col justify-between"
+              className="feature-bg dark:feature-bg p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-3 flex flex-col justify-between"
             >
               <div className="space-y-2">
                 <div className="flex items-start justify-between gap-2">
@@ -152,7 +152,7 @@ export const PlanPage: React.FC = () => {
         >
           <div
             id="add-activity-modal-content"
-            className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-5"
+            className="feature-bg dark:feature-bg border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-5"
           >
             <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
               <h3 className="font-bold text-lg text-slate-900 dark:text-white">

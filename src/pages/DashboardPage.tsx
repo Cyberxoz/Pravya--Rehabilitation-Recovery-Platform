@@ -46,7 +46,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
       <SafetyBanner type="subtle" />
 
       {/* Main Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-xs">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-xs">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">
             Recovery Overview
@@ -73,7 +73,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
       {/* CORE FEATURE #1 METRIC CARDS */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Current Stage */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+        <div className="feature-bg dark:feature-bg p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
             <span>Current Stage</span>
             <Clock className="w-4 h-4 text-teal-600" />
@@ -87,7 +87,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
         </div>
 
         {/* Today's Recovery */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+        <div className="feature-bg dark:feature-bg p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
             <span>Today's Recovery</span>
             <CalendarCheck className="w-4 h-4 text-teal-600" />
@@ -108,7 +108,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
         </div>
 
         {/* Next Milestone */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+        <div className="feature-bg dark:feature-bg p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-500 dark:text-slate-400">
             <span>Next Milestone</span>
             <Award className="w-4 h-4 text-amber-500" />
@@ -137,7 +137,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onStartSession }) 
       </div>
 
       {/* TODAY'S PLANNED RECOVERY SESSIONS */}
-      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-xs space-y-4">
+      <div className="feature-bg dark:feature-bg rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-xs space-y-4">
         <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
           <div>
             <h2 className="font-bold text-lg text-slate-900 dark:text-white">

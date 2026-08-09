@@ -26,7 +26,7 @@ export const LoginPage: React.FC = () => {
         </p>
       </div>
 
-      <form onSubmit={handleLogin} className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 text-xs shadow-sm">
+      <form onSubmit={handleLogin} className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 text-xs shadow-sm">
         <div>
           <label className="block font-bold text-slate-700 dark:text-slate-300 mb-1">Email:</label>
           <input

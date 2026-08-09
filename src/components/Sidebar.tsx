@@ -36,10 +36,10 @@ export const Sidebar: React.FC = () => {
   return (
     <aside
       id="pravya-sidebar"
-      className="hidden lg:flex flex-col w-64 border-r border-[#0F4C4A]/10 dark:border-slate-800 bg-[#FAF8F5] dark:bg-slate-900 h-screen sticky top-0 shrink-0 select-none z-20"
+      className="hidden lg:flex flex-col w-64 border-r border-[#0F4C4A]/10 dark:border-slate-800 backdrop-blur-md bg-white/60 dark:bg-slate-900/60 h-screen sticky top-0 shrink-0 select-none z-20"
     >
       {/* App Brand Header */}
-      <div className="p-5 border-b border-[#0F4C4A]/10 dark:border-slate-800/80 flex flex-col gap-1.5">
+      <div className="p-5 border-b border-[#0F4C4A]/10 dark:border-slate-800/80 flex flex-col gap-1.5 bright-glass">
         <PravyaLogo size="md" showWordmark={true} variant="deep-teal" />
         <p className="text-[11px] font-medium text-[#0F4C4A]/70 dark:text-teal-300/70 mt-1 italic tracking-tight">
           "Your Recovery. Your Journey. Your Progress."
@@ -74,7 +74,7 @@ export const Sidebar: React.FC = () => {
       </nav>
 
       {/* Footer Support Notice */}
-      <div className="p-4 border-t border-[#0F4C4A]/10 dark:border-slate-800 bg-[#FAF8F5]/80 dark:bg-slate-900/50 text-xs text-slate-500 dark:text-slate-400">
+      <div className="p-4 border-t border-[#0F4C4A]/10 dark:border-slate-800 bright-glass text-xs text-slate-500 dark:text-slate-400">
         <div className="flex items-center gap-2 font-semibold text-[#0F4C4A] dark:text-teal-300 mb-1">
           <Heart className="w-3.5 h-3.5 text-[#0F4C4A]" />
           <span>Recovery Companion</span>

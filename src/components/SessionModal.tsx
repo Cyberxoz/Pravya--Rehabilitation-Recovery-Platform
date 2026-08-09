@@ -67,7 +67,7 @@ export const SessionModal: React.FC<SessionModalProps> = ({
     >
       <div
         id="session-modal-content"
-        className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative space-y-6"
+        className="feature-bg dark:feature-bg border border-slate-200 dark:border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative space-y-6"
       >
         {/* Header */}
         <div className="flex items-start justify-between border-b border-slate-100 dark:border-slate-800 pb-4">

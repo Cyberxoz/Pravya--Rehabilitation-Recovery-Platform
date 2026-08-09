@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header
       id="pravya-header"
-      className="sticky top-0 z-30 bg-[#FAF8F5]/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-[#0F4C4A]/10 dark:border-slate-800 px-4 sm:px-6 py-3"
+      className="sticky top-0 z-30 bright-glass backdrop-blur-md border-b border-[#0F4C4A]/10 dark:border-slate-800 px-4 sm:px-6 py-3"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         {/* Left: Mobile menu toggle & Logo */}

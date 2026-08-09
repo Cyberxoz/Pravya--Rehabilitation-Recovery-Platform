@@ -59,7 +59,7 @@ export const OnboardingPage: React.FC = () => {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-6">
+      <form onSubmit={handleSubmit} className="feature-bg dark:feature-bg border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm space-y-6">
         {/* Recovery Category */}
         <div className="space-y-2">
           <label className="block text-xs font-bold text-slate-800 dark:text-slate-200">

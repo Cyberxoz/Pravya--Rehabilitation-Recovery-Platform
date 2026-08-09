@@ -70,7 +70,7 @@ export const WhatChangedPage: React.FC = () => {
       <SafetyBanner type="subtle" />
 
       {/* Header */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-1">
             <TrendingUp className="w-4 h-4 text-teal-600" />
@@ -91,7 +91,7 @@ export const WhatChangedPage: React.FC = () => {
       </div>
 
       {/* FACTUAL STATEMENTS PANEL */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
+      <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-4">
         <h2 className="font-bold text-lg text-slate-900 dark:text-white flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-teal-600" />
           <span>Factual Key Highlights</span>

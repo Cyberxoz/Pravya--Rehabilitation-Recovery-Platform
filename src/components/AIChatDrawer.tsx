@@ -97,7 +97,7 @@ export const AIChatDrawer: React.FC<AIChatDrawerProps> = ({
     >
       <div
         id="ai-assistant-drawer"
-        className="bg-white dark:bg-slate-900 w-full max-w-md h-full shadow-2xl flex flex-col border-l border-slate-200 dark:border-slate-800"
+        className="feature-bg dark:feature-bg w-full max-w-md h-full shadow-2xl flex flex-col border-l border-slate-200 dark:border-slate-800"
       >
         {/* Header */}
         <div className="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-teal-50/50 dark:bg-teal-950/30">

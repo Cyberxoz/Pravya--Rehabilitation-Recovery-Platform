@@ -94,7 +94,7 @@ export const WeeklyStoryPage: React.FC = () => {
 
         {/* 4 Key Stat Badges */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
+          <div className="feature-bg dark:feature-bg p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
             <p className="text-3xl font-black text-teal-600 dark:text-teal-400">
               {currentSummary.recordedSessions}
             </p>
@@ -103,7 +103,7 @@ export const WeeklyStoryPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
+          <div className="feature-bg dark:feature-bg p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 text-center space-y-1">
             <p className="text-3xl font-black text-emerald-600 dark:text-emerald-400">
               +{currentSummary.recordedSessions > 5 ? 2 : 0}
             </p>

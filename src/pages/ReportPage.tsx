@@ -18,7 +18,7 @@ export const ReportPage: React.FC = () => {
   return (
     <div id="pravya-report-page" className="space-y-6 pb-12 max-w-4xl mx-auto">
       {/* Action Bar */}
-      <div className="flex items-center justify-between bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs print:hidden">
+      <div className="flex items-center justify-between feature-bg dark:feature-bg p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs print:hidden">
         <div>
           <h1 className="text-xl font-bold text-slate-900 dark:text-white">
             PRAVYA Progress Report
@@ -39,7 +39,7 @@ export const ReportPage: React.FC = () => {
       </div>
 
       {/* PRINTABLE REPORT DOCUMENT */}
-      <div className="bg-white text-slate-900 p-8 rounded-2xl border border-slate-200 shadow-lg space-y-6 print:border-none print:shadow-none print:p-0">
+      <div className="feature-bg dark:feature-bg text-slate-900 p-8 rounded-2xl border border-slate-200 shadow-lg space-y-6 print:border-none print:shadow-none print:p-0">
         {/* Header Branding */}
         <div className="flex items-start justify-between border-b-2 border-teal-600 pb-4">
           <div>

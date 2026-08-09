@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+/* Four-color background: Charcoal Plum → Muted Purple → Soft Terracotta → Warm Cream */
+
+.pravya-gradient {
+	background: radial-gradient(
+		circle at top left,
+		#38BDF8 0%,
+		#818CF8 35%,
+		#C084FC 70%,
+		#F472B6 100%
+	);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* Ensure the gradient is applied to the page root so it's always visible */
+html, body, #root {
+	height: 100%;
+	background: radial-gradient(
+		circle at top left,
+		#38BDF8 0%,
+		#818CF8 35%,
+		#C084FC 70%,
+		#F472B6 100%
+	);
+}
+
+/* Bright glass white for section backgrounds */
+.bright-glass {
+	background-color: rgba(255, 255, 255, 0.75);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+}
+
+.dark .bright-glass {
+	background-color: rgba(15, 23, 42, 0.72);
+}
+
+/* Feature section background: radial gradient (top-right) with translucent white fallback */
+.feature-bg {
+	background-color: rgba(255, 255, 255, 0.75);
+	background-image: radial-gradient(circle at top right, #E0F2FE, #EEF2FF 45%, #FAE8FF 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top right;
+}

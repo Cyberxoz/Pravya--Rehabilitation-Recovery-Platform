@@ -81,7 +81,7 @@ export const PravyaLogo: React.FC<PravyaLogoProps> = ({
   return (
     <div className={`flex items-center gap-3 select-none ${className}`}>
       {/* App Icon (Calligraphic P) */}
-      <div className={`relative ${dimensions.box} rounded-2xl overflow-hidden shadow-xs flex items-center justify-center bg-[#FAF8F5] dark:bg-slate-800 border border-[#0F4C4A]/15`}>
+      <div className={`relative ${dimensions.box} rounded-2xl overflow-hidden shadow-xs flex items-center justify-center bright-glass border border-[#0F4C4A]/15`}>
         {useGeneratedIcon ? (
           <img
             src={generatedIconPath}

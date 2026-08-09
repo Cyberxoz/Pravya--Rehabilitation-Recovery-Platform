@@ -34,7 +34,7 @@ export const ProgressPage: React.FC = () => {
       <SafetyBanner type="subtle" />
 
       {/* Header */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-1">
             <BarChart3 className="w-4 h-4 text-teal-600" />
@@ -56,7 +56,7 @@ export const ProgressPage: React.FC = () => {
       {/* CHARTS GRID */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Planned vs Recorded Sessions Chart */}
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+        <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-base text-slate-900 dark:text-white">
               Planned vs Recorded Sessions
@@ -80,7 +80,7 @@ export const ProgressPage: React.FC = () => {
         </div>
 
         {/* Check-In Ratings Trend */}
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+        <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-base text-slate-900 dark:text-white">
               Check-In Comfort & Difficulty Ratings

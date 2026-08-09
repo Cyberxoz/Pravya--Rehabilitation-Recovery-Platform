@@ -23,12 +23,13 @@ import { LoginPage } from './pages/LoginPage';
 import { SignupPage } from './pages/SignupPage';
 import { ProfilePage } from './pages/ProfilePage';
 
-import { SessionRecord, DailyCheckIn } from './types';
+import { SessionRecord, DailyCheckIn, SessionStatus } from './types';
 import { StorageService } from './lib/storage';
 
-const AppContent: React.FC = () => {
+const AppContent = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [isAiOpen, setIsAiOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [activeSession, setActiveSession] = useState<SessionRecord | null>(null);
   const [isCheckInOpen, setIsCheckInOpen] = useState(false);
   const [checkInSessionId, setCheckInSessionId] = useState<string | undefined>(undefined);
@@ -48,14 +49,20 @@ const AppContent: React.FC = () => {
     setActiveSession(session);
   };
 
-  const handleFinishSession = (completedSessionId: string, durationMins: number) => {
-    // Record completion in storage
-    StorageService.completeSession(completedSessionId, durationMins);
-    setActiveSession(null);
-
-    // Prompt Safe Check-in
-    setCheckInSessionId(completedSessionId);
-    setIsCheckInOpen(true);
+  const handleFinishSession = (
+    sessionId: string,
+    status: SessionStatus,
+    notes?: string
+  ) => {
+    if (status === 'COMPLETED') {
+      StorageService.completeSession(sessionId, undefined, notes);
+      setActiveSession(null);
+      setCheckInSessionId(sessionId);
+      setIsCheckInOpen(true);
+    } else {
+      StorageService.recordSessionStatus(sessionId, status, notes);
+      setActiveSession(null);
+    }
   };
 
   const handleSubmitCheckIn = (checkIn: Omit<DailyCheckIn, 'id' | 'userId'>) => {
@@ -64,20 +71,21 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
+  <div className="min-h-screen pravya-gradient text-slate-900 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200 bg-fixed overflow-y-auto">
       {/* Top Navbar */}
       <Navbar
         darkMode={darkMode}
         onToggleDarkMode={() => setDarkMode(!darkMode)}
         onOpenAi={() => setIsAiOpen(true)}
+        onToggleMobileMenu={() => setIsMobileOpen(true)}
       />
 
-      <div className="flex-1 flex overflow-hidden max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 gap-6">
+      <div className="flex-1 flex overflow-hidden max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-16 py-6 gap-6">
         {/* Desktop Sidebar */}
         <Sidebar />
 
         {/* Main Content Viewport */}
-        <main className="flex-1 min-w-0 overflow-y-auto">
+        <main className="flex-1 min-w-0">
           <Routes>
             <Route
               path="/"
@@ -105,12 +113,13 @@ const AppContent: React.FC = () => {
       </div>
 
       {/* Mobile Navigation Bar */}
-      <MobileNav onOpenAi={() => setIsAiOpen(true)} />
+      <MobileNav isOpen={isMobileOpen} onClose={() => setIsMobileOpen(false)} />
 
       {/* Interactive Active Session Modal */}
       {activeSession && (
         <SessionModal
           session={activeSession}
+          isOpen={!!activeSession}
           onClose={() => setActiveSession(null)}
           onFinishSession={handleFinishSession}
         />

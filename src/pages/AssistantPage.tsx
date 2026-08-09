@@ -8,7 +8,7 @@ export const AssistantPage: React.FC = () => {
 
   return (
     <div id="pravya-assistant-page" className="space-y-6 pb-12 max-w-4xl mx-auto">
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
+      <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
         <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">
           <Bot className="w-4 h-4 text-teal-600" />
           <span>Non-Diagnostic AI Companion</span>
@@ -29,7 +29,7 @@ export const AssistantPage: React.FC = () => {
       </div>
 
       {/* Embedded Drawer View */}
-      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 h-[600px] overflow-hidden">
+      <div className="feature-bg dark:feature-bg rounded-2xl border border-slate-200 dark:border-slate-800 h-[600px] overflow-hidden">
         <AIChatDrawer isOpen={true} onClose={() => {}} profile={profile} />
       </div>
     </div>

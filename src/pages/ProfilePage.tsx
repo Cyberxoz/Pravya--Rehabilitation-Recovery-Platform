@@ -16,7 +16,7 @@ export const ProfilePage: React.FC = () => {
 
   return (
     <div id="pravya-profile-page" className="space-y-6 pb-12 max-w-2xl mx-auto">
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
+      <div className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-2">
         <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">
           <User className="w-4 h-4 text-teal-600" />
           <span>Patient Account Settings</span>
@@ -29,7 +29,7 @@ export const ProfilePage: React.FC = () => {
         </p>
       </div>
 
-      <form onSubmit={handleSave} className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 text-xs">
+      <form onSubmit={handleSave} className="feature-bg dark:feature-bg p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4 text-xs">
         <div>
           <label className="block font-bold text-slate-700 dark:text-slate-300 mb-1">
             Condition / Injury Name:
