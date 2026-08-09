@@ -1,0 +1,6 @@
+{
+  "name": "PRAVYA",
+  "description": "Your Recovery. Your Journey. Your Progress. - Secure digital rehabilitation and recovery companion",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
