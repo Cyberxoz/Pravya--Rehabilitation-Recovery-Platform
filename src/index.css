@@ -29,20 +29,17 @@ html, body, #root {
 
 /* Bright glass white for section backgrounds */
 .bright-glass {
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(255,255,255,0.92);
 	backdrop-filter: blur(6px);
 	-webkit-backdrop-filter: blur(6px);
 }
 
 .dark .bright-glass {
-	background-color: rgba(15, 23, 42, 0.72);
+	background-color: rgba(15,23,42,0.72);
 }
 
-/* Feature section background: radial gradient (top-right) with translucent white fallback */
-.feature-bg {
-	background-color: rgba(255, 255, 255, 0.75);
-	background-image: radial-gradient(circle at top right, #E0F2FE, #EEF2FF 45%, #FAE8FF 100%);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top right;
+/* Make any element using Tailwind background utilities transparent so root gradient shows through */
+[class*="bg-"] {
+	background-color: transparent !important;
+	background-image: none !important;
 }
